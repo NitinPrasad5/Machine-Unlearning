@@ -1,23 +1,38 @@
-To run the code, 
 
-- step1 - download the repository and save upload to a drive folder.
-- step2 - Go to the root directory of Main.ipynb file.
-- step3 - In the IPYNB file, in second cell change the folder path to the path of your folder on your drive.
-- step4 - RUn the cells one by one, results will be produced accordingly.
+# Problem: 
+Machine learning models often retain learned information even after the data used to train them is deleted. This can lead to privacy concerns and regulatory compliance issues, especially when handling sensitive information. Machine unlearning addresses this challenge by enabling models to "forget" specific data without retraining from scratch, ensuring privacy and compliance while maintaining model performance.
 
-Results will be saved in the csv files named in the scripts (after the -out)
+# About the project:
+The aim of Unlearnify is to develop an advanced machine unlearning framework that enhances the efficiency and accuracy of removing specific data from trained models. By integrating a noise-induced impairment model with a student-teacher framework and incorporating curriculum learning,this project shows significant improvements in both forget accuracy and retain accuracy.
 
-Flow of the Code
-- dataset.py: contain the code for downloading and arranging the data in required format.
-- metrics.py: contain the code for evaluation metrics.
-- model.py: Contain the code for model architecture.
-- unlearn.py: Contain the code for unlearning algorithms.
-- utils.py: Contain the code for training utility functions.
 
-In the work flow of IPYNB Files, first it 
-1. downloads the data
-2. Split the data into forget and retain data as required
-3. Train the original model on all the data
-4. Evaluate the performance of original model
-5. Unlearn the model by mentioned unlearning algorithms
-6. Evaluate the Unlearned model performance.
+# Usage
+## Running the Code
+
+Download the repository and upload it to a drive folder.
+Navigate to the root directory containing the Main.ipynb file.
+In the second cell of the IPYNB file, change the folder path to the path of your folder on your drive.
+Run the cells one by one; results will be produced accordingly.
+Results will be saved in CSV files as specified in the scripts (look for filenames ending with -out).
+
+## Code Flow
+
+dataset.py: Contains the code for downloading and arranging the data in the required format.
+metrics.py: Contains the code for evaluation metrics.
+model.py: Contains the code for the model architecture.
+unlearn.py: Contains the code for unlearning algorithms.
+utils.py: Contains the code for training utility functions.
+
+## Workflow in IPYNB Files:
+Download the data.
+1. Split the data into forget and retain sets as required.
+2. Train the original model on all the data.
+3. Evaluate the performance of the original model.
+4. Apply unlearning algorithms to the model.
+5. Evaluates the performance of the unlearned model.
+
+# Results
+Forget Accuracy: Improved by 3%
+Retain Accuracy: Enhanced by 5%
+
+
