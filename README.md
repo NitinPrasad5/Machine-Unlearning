@@ -3,7 +3,7 @@
 Machine learning models often retain learned information even after the data used to train them is deleted. This can lead to privacy concerns and regulatory compliance issues, especially when handling sensitive information. Machine unlearning addresses this challenge by enabling models to "forget" specific data without retraining from scratch, ensuring privacy and compliance while maintaining model performance.
 
 ## About the project:
-The aim of Unlearnify is to develop an advanced machine unlearning framework that enhances the efficiency and accuracy of removing specific data from trained models. By integrating a noise-induced impairment model with a student-teacher framework and incorporating curriculum learning,this project shows significant improvements in both forget accuracy and retain accuracy.
+The aim of this project is to develop an advanced machine unlearning framework that enhances the efficiency and accuracy of removing specific data from trained models. By integrating a noise-induced impairment model with a student-teacher framework and incorporating curriculum learning,this project shows significant improvements in both forget accuracy and retain accuracy.
 
 
 ## Usage
